@@ -26,7 +26,7 @@ const SingleTodo = ({items, handleDelete, MakeApprove}) => {
 <p className="text-xl text-red-500">DeadLine: <span className=" text-white">{taskDeadline}</span></p>
   <p className="text-xl text-red-500">Priority: <span className=" text-white">{taskPriority}</span></p>
 </div>
-<div className="flex flex-row text-xl justify-between text-white mt-2">
+<div className="flex lg:flex-row flex-col gap-3 text-xl justify-between text-white mt-2">
     <p onClick={() => MakeApprove(_id)} className="bg-fuchsia-500 px-6 py-1 rounded-lg  hover:bg-black border-2 border-fuchsia-500" >Start <i className=" ml-2 mt-1 fa-solid fa-play"></i></p>
     <Link to={`/dashboard/updateTask/${_id}`}>
     <p className="bg-fuchsia-500 px-6 py-1 rounded-lg  hover:bg-black border-2 border-fuchsia-500" >Edit <i className="ml-2 mt-1 fa-solid fa-pen-to-square"></i></p>

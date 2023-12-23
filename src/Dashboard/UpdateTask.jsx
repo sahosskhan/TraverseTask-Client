@@ -5,6 +5,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { MdOutlineBrowserUpdated } from "react-icons/md";
 import { BiSolidEditAlt } from "react-icons/bi";
+import { Helmet } from "react-helmet-async";
 
 const UpdateTask = () => {
     const navigate = useNavigate()
@@ -72,6 +73,9 @@ fetch(
 
     return (
         <div className="bg-black min-h-screen">
+           <Helmet>
+        <title>Edit Task | TraverseTask | Online Task Management Platform</title>
+      </Helmet>
           <h1 className="flex gap-x-2  justify-center items-center text-fuchsia-500 text-4xl font-bold"><MdOutlineBrowserUpdated className="text-5xl" /> Update Your Task Here</h1>
 
 <section className="">

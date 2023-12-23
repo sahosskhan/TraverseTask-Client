@@ -57,13 +57,23 @@ const Navbar = () => {
           >
             <div id="sidebar" className="flex flex-col lg:flex-row lg:mx-6">
                 <NavLink to="/"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
-                Home
+                <i className="fa-solid fa-house"></i> Home
+              </NavLink>
+          
+              <NavLink to="/about"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
+              <i className="fa-solid fa-circle-info"></i> About
+              </NavLink>
+              <NavLink to="/statistics"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
+              <i className="fa-solid fa-chart-line"></i> Statistics
+              </NavLink>
+              <NavLink to="/blog"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
+              <i className="fa-solid fa-bookmark"></i> Blog
+              </NavLink>
+              <NavLink to="/support"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
+              <i className="fa-solid fa-headset"></i> Support
               </NavLink>
               <NavLink to="/dashboard/profile"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
-                Dashboard
-              </NavLink>
-              <NavLink to="/about"  className="my-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">
-                About
+              <i className="fa-solid fa-server"></i> Dashboard
               </NavLink>
               {user?
               <NavLink onClick={handleLogOut}    className="my-2 flex gap-x-2 text-fuchsia-500 font-medium text-xl  uppercase transition-colors duration-300 transform  hover:text-white lg:mx-4 lg:my-0">

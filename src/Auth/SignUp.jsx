@@ -6,6 +6,7 @@ import { AuthContext } from './AuthProvider';
 import useAxiosPublic from '../Hooks/useAxiosPublic';
 import Googlebtn from './Googlebtn';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const SignUp = () => {
   const axiosPublic = useAxiosPublic();
@@ -74,6 +75,9 @@ const SignUp = () => {
 
   return (
     <div className='flex justify-center items-center min-h-screen bg-black'>
+       <Helmet>
+        <title>Signup | TraverseTask | Online Task Management Platform</title>
+      </Helmet>
       <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-black'>
         <div className='mb-8 text-center'>
           <h1 className='my-3 text-4xl font-bold'>Sign Up</h1>

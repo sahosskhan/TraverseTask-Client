@@ -4,6 +4,7 @@ import { RiAddCircleLine } from "react-icons/ri";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
+import { Helmet } from "react-helmet-async";
 const AddTask = () => {
     const navigate = useNavigate();
     const {user}=useAuth();
@@ -63,6 +64,10 @@ fetch(
       }
     return (
         <div className="bg-black min-h-screen">
+ <Helmet>
+        <title>Add Task | TraverseTask | Online Task Management Platform</title>
+      </Helmet>
+
           <h1 className="flex gap-x-2  justify-center items-center text-fuchsia-500 text-4xl font-bold"><MdPlaylistAddCircle className="text-5xl" /> Add Your Task Here</h1>
 
 <section className="">

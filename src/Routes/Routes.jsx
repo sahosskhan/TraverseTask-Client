@@ -11,6 +11,10 @@ import SignUp from "../Auth/SignUp";
 import Profile from "../Dashboard/Profile";
 import PrivateRoute from "./PrivateRoutes";
 import UpdateTask from "../Dashboard/UpdateTask";
+import About from "../Pages/About";
+import Report from "../Pages/Report";
+import Blog from "../Pages/Blog";
+import Contact from "../Pages/Contact";
 
 
 
@@ -29,6 +33,22 @@ import UpdateTask from "../Dashboard/UpdateTask";
         {
             path: "/",
             element: <Home/>,
+        },
+        {
+            path: "/about",
+            element: <About/>,
+        },
+        {
+            path: "/statistics",
+            element: <Report/>,
+        },
+        {
+            path: "/blog",
+            element: <Blog/>,
+        },
+        {
+            path: "/support",
+            element: <Contact/>,
         },
       ],
       

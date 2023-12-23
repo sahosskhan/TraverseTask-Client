@@ -1,6 +1,7 @@
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import Logo from "../Layouts/Logo";
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div>
@@ -19,16 +20,16 @@ const Footer = () => {
             </div>
         </div>
         
-        <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700"/>
+        <hr className="my-6 border-gray-200 md:my-10 "/>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div>
                 <p className="font-semibold text-xl uppercase text-fuchsia-500">Quick Link</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a  className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">Home</a>
-                    <a  className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">About</a>
-                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">Customer Care</a>
+                    <Link to='/about'  className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">About</Link>
+                    <Link to='/blog' className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">Blog</Link>
+                    <Link to='/support' className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">Support</Link>
                 </div>
             </div>
 
@@ -36,9 +37,9 @@ const Footer = () => {
                 <p className="font-semibold text-xl uppercase text-fuchsia-500">Product</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">Netpad Text Editor</a>
-                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">Dadtro Data Management </a>
-                    <a  className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">Fintro Finance Tech </a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">Netpad Text Editor</a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">Dadtro Data Management </a>
+                    <a  className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">Fintro Finance Tech </a>
                 </div>
             </div>
 
@@ -46,9 +47,9 @@ const Footer = () => {
                 <p className="font-semibold text-xl uppercase text-fuchsia-500">Social media</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a href="https://www.facebook.com/sahosskhan" className="flex gap-x-2 text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500"><FaFacebookSquare className="text-2xl" /> <span className="mt-[2px]">@traversetask</span></a>
-                    <a href="https://github.com/sahosskhan" className="flex gap-x-2 text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500"><FaGithubSquare className="text-2xl" /><span className="mt-[2px]">@traversetask</span></a>
-                    <a href="https://www.linkedin.com/in/sahosskhan" className="flex gap-x-2 text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500"><FaLinkedin className="text-2xl" /><span className="mt-[2px]">@traversetask</span></a>
+                    <a href="https://www.facebook.com/sahosskhan" className="flex gap-x-2 text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500"><FaFacebookSquare className="text-2xl" /> <span className="mt-[2px]">@traversetask</span></a>
+                    <a href="https://github.com/sahosskhan" className="flex gap-x-2 text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500"><FaGithubSquare className="text-2xl" /><span className="mt-[2px]">@traversetask</span></a>
+                    <a href="https://www.linkedin.com/in/sahosskhan" className="flex gap-x-2 text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500"><FaLinkedin className="text-2xl" /><span className="mt-[2px]">@traversetask</span></a>
                 </div>
             </div>
 
@@ -56,13 +57,13 @@ const Footer = () => {
                 <p className="font-semibold text-xl uppercase text-fuchsia-500">Contact Us</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">+8801778030482</a>
-                    <a href="#" className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-fuchsia-400 hover:underline hover:text-fuchsia-500">info@traversetask.com</a>
+                    <a href="#" className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">+8801778030482</a>
+                    <a href="#" className="text-white transition-colors duration-300 dark:text-gray-300  hover:underline hover:text-fuchsia-500">info@traversetask.com</a>
                 </div>
             </div>
         </div>
         
-        <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700"/>
+        <hr className="my-6 border-gray-200 md:my-10 "/>
         
         <div className="flex flex-col items-center justify-between sm:flex-row">
           <Logo/>
